@@ -17,10 +17,10 @@ class Navigation extends Component {
   render(){
     return(
       <div id="navigation">
-      //Consists of the Search Box and link to the Question Form
+      {/*Consists of the Search Box and link to the Question Form*/}
         <Interactors callbackFromNav={this.questionCallback.bind(this)}
           callbackFromNavForFilter={this.filterCallback.bind(this)}/>
-      //Displays the question list
+      {/*Displays the question list*/}
         <LeftPane questionList={this.props.questionList} callbackFromNav={this.questionCallback.bind(this)} />
       </div>
     );
