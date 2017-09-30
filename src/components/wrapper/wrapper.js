@@ -65,7 +65,7 @@ class Wrapper extends Component {
   render(){
     return (
       <div id='wrapper'>
-      //Consists of the Search Box and link to the Question Form and displays the question list
+      {/*Consists of the Search Box and link to the Question Form and displays the question list*/}
         <Navigation questionList={this.state.questions} callbackFromWrapper={this.questionSelect.bind(this)}
         callbackFromWrapperForFilter={this.filterQuestion.bind(this)}/>
         {(this.state.isResponseVisible) ?
@@ -74,7 +74,6 @@ class Wrapper extends Component {
           callbackDelete={this.deleteQuestion.bind(this)}
           callbackUpdate={this.updateQuestion.bind(this)}/>
            :
-        //Renders the Question Form
         <RightPane callbackFromWrapper={this.insertQuestions.bind(this)}/>
         }
 
